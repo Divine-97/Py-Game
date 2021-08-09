@@ -1,6 +1,7 @@
 # python code goes here
 def start():
-    print("\n You are standing in a dark room")
+    print("\nWelcome to the Adventure game")
+    print("\nYou are standing in a dark room")
     print("There is a door to your left and right, which one do you take(l or r)")
 
     answer = input(">").lower()
@@ -50,10 +51,10 @@ def diamond_room():
   
   if answer == "1":
     # the player is dead, call game_over() function with the "reason"
-    game_over("They were cursed diamonds! The moment you touched it, the building collapsed, and you die!")
+    game_over("They were cursed diamonds! , the building collapsed when you touched them and you die!")
   elif answer == "2":
     # the player won the game
-    print("\nNice, you're are an honest man! Congrats you win the game!")
+    print("\nNice, that was a smart move! Congrats you win the game!")
     # activate play_again() function
     play_again()
   else:
@@ -76,7 +77,7 @@ def monster_room():
     diamond_room()
   elif answer == "2":
     # the player is dead, call game_over() with "reason"
-    game_over("The monster was hungry, he/it ate you.")
+    game_over("The monster was hungry, it ate you.")
   else:
     # game_over() with "reason"
     game_over("Go and learn how to type a number.")
@@ -96,7 +97,7 @@ def bear_room():
         game_over("The bear killed you.")
     elif answer == "2":
     # lead him to the diamond_room()
-        print("\nYour Good time, the bear moved from the door. You can go through it now!")
+        print("\nGood, the bear moved from the door. You can go through it now!")
         diamond_room()
     else:
     # else call game_over() function with the "reason" argument
