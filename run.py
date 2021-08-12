@@ -6,6 +6,7 @@ def start():
     print("\nWelcome to the Adventure game")
     print("\nYou are standing in a dark room")
     print("There is a door to your left and right, which one do you take(l or r)")
+    print("Enter your data here")
 
     answer = input(">").lower()
 
