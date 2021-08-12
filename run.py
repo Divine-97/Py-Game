@@ -22,7 +22,7 @@ def start():
 
 def play_again():
     """
-    This function is to ask the user to play again
+    This function is to ask the player to play again
     """
     print("\nDo you want to play again? (y or n)")
   
@@ -32,6 +32,9 @@ def play_again():
     if "y" in answer:
     # if player typed "yes" or "y" start the game from the beginning
       start()
+    elif "n" in answer :
+    # if player typed "no" or "n" print thank you for playing    
+        print("\nThank you for playing")
     else:
     # if user types anything besides "yes" or "y", exit() the program
       exit()
@@ -63,16 +66,21 @@ def diamond_room():
   
     answer = input(">")
   
-    if  answer == "1":
-    # the player is dead, call game_over() function with the "reason"
-      game_over("They were cursed diamonds! , the building collapsed when you touched them and you die!")
+    if answer == "1":
+       """
+       the player is dead, call game_over() function with the "reason"
+       """
+       game_over("They were cursed diamonds! , the building collapsed when you touch the diamonds and you die!")
     elif answer == "2":
-    # the player won the game
-      print("\nNice, that was a smart move! Congrats you win the game!")
-    # activate play_again() function
+         """
+         the player won the game
+         """ 
+         print("\nNice, that was a smart move! Congrats you win the game!")
     else:
-    # call game_over() with "reason"
-      game_over("Go and learn how to type a number.")
+         """
+         call game_over() with "reason"
+         """
+         game_over("Go and learn how to type a number.")
 
 def monster_room():
     """
