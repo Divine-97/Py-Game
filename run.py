@@ -5,20 +5,21 @@ def start():
     """
     print("\nWelcome to the Adventure game")
     print("\nYou are standing in a dark room")
-    print("There is a door to your left and right, which one do you take(l or r)")
+    print("There is a door to your left and right")
+    print("Which one do you take(l or r)")
     print("Enter your data here")
 
     answer = input(">").lower()
 
-    if "l" in answer:
     # if player typed "left" or "l" lead him to bear_room()
-        bear_room()
+    if "l" in answer:
+       bear_room()
+    # else if player typed "right" or "r" lead him to monster_room()    
     elif "r" in answer:
-    # else if player typed "right" or "r" lead him to monster_room()
-        monster_room()
+       monster_room()
+    # else call game_over() function with the "reason" argument    
     else:
-    # else call game_over() function with the "reason" argument
-        game_over("Don't you know how to type something properly?")
+        game_over("Invalid input, try again")
 
 
 def play_again():
@@ -26,37 +27,35 @@ def play_again():
     This function is to ask the player to play again
     """
     print("\nDo you want to play again? (y or n)")
-  
     answer = input(">").lower()
-    
 
-    if "y" in answer:
     # if player typed "yes" or "y" start the game from the beginning
-      start()
-    elif "n" in answer :
-    # if player typed "no" or "n" print thank you for playing    
+    if "y" in answer:
+        start()
+    # if player typed "no" or "n" print thank you for playing   
+    elif "n" in answer:   
         print("\nThank you for playing")
+    # if user types anything besides "yes" or "y", exit() the program    
     else:
-    # if user types anything besides "yes" or "y", exit() the program
-      exit()
+        exit()
 
 
 def game_over(reason):
     """
     game_over function accepts an argument called "reason"
     """
-  
     print("\n" + reason)
     print("Game Over!")
   
     play_again()
     """
-    ask player to play again or not by activating play_again() function
+    Ask player to play again or not by activating play_again() function
     """
+
 
 def diamond_room():
     """
-    some prompts on what you would do when you enter the diamond_room
+    Some prompts on what you would do when you enter the diamond_room
     """
     print("\nYou are now in a room filled with diamonds!")
     print("And there is a door too!")
@@ -64,55 +63,56 @@ def diamond_room():
     print("1). Take some diamonds and go through the door.")
     print("2). Just go through the door.")
 
-  
     answer = input(">")
   
     if answer == "1":
        """
-       the player is dead, call game_over() function with the "reason"
+       The player is dead, call game_over() function with the "reason"
        """
-       game_over("They were cursed diamonds! , the building collapsed when you touch the diamonds and you die!")
+       game_over("They were cursed diamonds, you died")
     elif answer == "2":
-         """
-         the player won the game
+        """
+        the player won the game
          """ 
-         print("\nNice, that was a smart move! Congrats you win the game!")
+        print("\nNice, that was a smart move! Congrats you win the game!")
     else:
-         """
-         call game_over() with "reason"
-         """
-         game_over("Go and learn how to type a number.")
+        """
+        call game_over() with "reason"
+        """
+        game_over("Go and learn how to type a number.")
+
 
 def monster_room():
     """
-     some prompts for when you enter the monster_room also '\n' is to print the line in a new line
+     some prompts for when you enter the monster_room also 
+     '\n' is to print the line in a new line
      """
     print("\nNow you entered the room of a monster!")
-    print("The monster is sleeping.\nBehind the monster, there is another door. What would you do? (1 or 2)")
+    print("The monster is asleep.\nBehind the monster is another door.")
+    print("What would you do? (1 or 2)")
     print("1). Go through the door silently.")
     print("2). Kill the monster and show your courage!")
 
-  
     answer = input(">")
     """
     takes users input
     """
-
-    if  answer == "1":
+    if answer == "1":
         """
-         lead him to the diamond_room()
+        lead him to the diamond_room()
         """
         diamond_room()
     elif answer == "2":
-         """
+        """
         the player is dead, call game_over() with "reason"
-         """ 
-         game_over("The monster was hungry, it ate you.")
+        """ 
+        game_over("The monster was hungry, it ate you.")
     else:
         """
         game_over() with "reason"
         """     
-        game_over("Go and learn how to type a number.")
+        game_over("Invalid input, try again")
+
 
 def bear_room():
     print("\nThere is a bear here.")
@@ -130,15 +130,15 @@ def bear_room():
        """ 
        game_over("The bear killed you.")
     elif answer == "2":
-         """
-         lead him to the diamond_room()
-         """
-         print("\nGood, the bear moved from the door. You can go through it now!")
-         diamond_room()
+       """
+       lead him to the diamond_room()
+       """
+       print("\nThe bear moved from the door. You can go through it now!")
+       diamond_room()
     else:
-         """
-         else call game_over() function with the "reason" argument
-         """
-         game_over("Don't you know how to type a number?")
+        """
+        else call game_over() function with the "reason" argument
+        """
+        game_over("Invalid input, try again")
 start()  
 
