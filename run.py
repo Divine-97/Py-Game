@@ -13,11 +13,38 @@ def start():
 
     # if player typed "left" or "l" lead him to bear_room()
     if "l" in answer:
-       bear_room()
-    # else if player typed "right" or "r" lead him to monster_room()    
+     bear_room()
+    # else if player typed "right" or "r" lead him to monster_room()
     elif "r" in answer:
-       monster_room()
-    # else call game_over() function with the "reason" argument    
+     monster_room()
+    # else call game_over() function with the "reason" argument
+    else:
+     game_over("Invalid input, try again")
+
+
+def golden_room():
+    """
+    some prompts when you enter the golden_room
+    """
+    print("\n You are now in a room full of gold")
+    print("And there is a door too!")
+    print("What would you do? (1 or 2)")
+    print("1).Take some gold and go through the door.")
+    print("2).Just go through the door.")
+
+    answer = input(">")
+    if answer == "1":
+        """
+        the player is dead, call game_over() function with the "reason"
+        """
+        game_over("You were killed because you took the gold")
+    elif answer == "2":
+        """
+        the player has won the game
+        """
+        print("Congrats you win the game with a prize")
+        # call out play_again() function
+        play_again()
     else:
         game_over("Invalid input, try again")
 
@@ -32,10 +59,10 @@ def play_again():
     # if player typed "yes" or "y" start the game from the beginning
     if "y" in answer:
         start()
-    # if player typed "no" or "n" print thank you for playing   
-    elif "n" in answer:   
+    # if player typed "no" or "n" print thank you for playing
+    elif "n" in answer:
         print("\nThank you for playing")
-    # if user types anything besides "yes" or "y", exit() the program    
+    # if user types anything besides "yes" or "y", exit() the program
     else:
         exit()
 
@@ -46,7 +73,6 @@ def game_over(reason):
     """
     print("\n" + reason)
     print("Game Over!")
-  
     play_again()
     """
     Ask player to play again or not by activating play_again() function
@@ -64,7 +90,6 @@ def diamond_room():
     print("2). Just go through the door.")
 
     answer = input(">")
-  
     if answer == "1":
        """
        The player is dead, call game_over() function with the "reason"
@@ -72,9 +97,9 @@ def diamond_room():
        game_over("They were cursed diamonds, you died")
     elif answer == "2":
         """
-        the player won the game
-         """ 
-        print("\nNice, that was a smart move! Congrats you win the game!")
+        lead the player to the golden_room()
+        """
+        golden_room()
     else:
         """
         call game_over() with "reason"
@@ -84,9 +109,9 @@ def diamond_room():
 
 def monster_room():
     """
-     some prompts for when you enter the monster_room also 
-     '\n' is to print the line in a new line
-     """
+    some prompts for when you enter the monster_room also
+    '\n' is to print the line in a new line
+    """
     print("\nNow you entered the room of a monster!")
     print("The monster is asleep.\nBehind the monster is another door.")
     print("What would you do? (1 or 2)")
@@ -105,12 +130,12 @@ def monster_room():
     elif answer == "2":
         """
         the player is dead, call game_over() with "reason"
-        """ 
+        """
         game_over("The monster was hungry, it ate you.")
     else:
         """
         game_over() with "reason"
-        """     
+        """
         game_over("Invalid input, try again")
 
 
@@ -120,14 +145,14 @@ def bear_room():
     print("The bear is eating tasty honey!")
     print("What would you do? (1 or 2)")
     print("1). Take the honey.")
-    print("2). Taunt the bear.")
+    print("2). Distract the bear.")
 
     answer = input(">")
 
     if answer == "1":
        """
        The player is killed by the bear
-       """ 
+       """
        game_over("The bear killed you.")
     elif answer == "2":
        """
@@ -140,5 +165,7 @@ def bear_room():
         else call game_over() function with the "reason" argument
         """
         game_over("Invalid input, try again")
-start()  
+
+start()
+
 
