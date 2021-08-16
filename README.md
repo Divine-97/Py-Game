@@ -7,6 +7,7 @@ Check out the live project [here](https://adventure-game-py.herokuapp.com/).
 
 ## How to play
 
+Adventure game is based on choices made by the player. To play the game the player is presented with different prompts, each prompt results to a different outcome. 
 ### Features
  Existing features
  * Introduction to the game
@@ -30,9 +31,25 @@ Check out the live project [here](https://adventure-game-py.herokuapp.com/).
 
  
 ## Testing
-  Bugs
+
+I have manually tested the code by doing the following:
+* Passed the code through PEP8 and confirmed there are no problems.
+* Tested in my local terminal and Code Institute Heroku terminal.
+* Given invalid input when the players inputs an invalid answer.
+
+
+ Bugs
+  
+   Solved bugs
+   * When testing my code using PEP8 I was getting identation errors (identation is not a multilple of four) which i corrected.
+ 
   
 ## Validator Testing 
  * PEP8
   No errors were returned from [PEP8online.com](http://pep8online.com/checkresult).
+  
+  ## Credits
+  
+  
+  
   
