@@ -1,13 +1,15 @@
 # Adventure Game
 
-Adventure game is a text based game in using Python. The game is just about different scenarios and is very easy to play.
+Adventure game is a text based game using Python. The game is just about different scenarios and is very easy to play. The player has to answer the questions provied in order to advance to the next scenario making sure to input valid answers in order to win the game. 
 
 Check out the live project [here](https://adventure-game-py.herokuapp.com/).
 ![Image 15-08-2021 at 11 16](https://user-images.githubusercontent.com/81257331/129475101-437fbfcf-11b0-47e9-baa4-05e7a505f6ee.jpg)
 
 ## How to play
 
-Adventure game is based on choices made by the player. To play the game the player is presented with different prompts, each prompt results to a different outcome. The player needs to select a choice that will advance to the next scenario by making sure they enter valid data. 
+Adventure game is based on choices made by the player. To play the game the player is presented with different prompts, each prompt results to a different outcome. The player needs to select a choice that will advance to the next scenario by making sure they enter valid data in order to win the game. The player has to make sure to answer the answer thinking deep as to what the outcome will be. If the player mistakenly inputs invalid data, the player will be asked to try again. 
+
+
 ### Features
  Existing features
  * Introduction to the game
@@ -17,6 +19,7 @@ Adventure game is based on choices made by the player. To play the game the play
  ![Image 16-08-2021 at 16 15](https://user-images.githubusercontent.com/81257331/129587155-ad34fdf0-033c-4fd8-96c2-215175a9a915.jpg)
  
   * Accepts users input
+  * Brings the user to a different scenario after answering the first one
    
 
 ![Image 16-08-2021 at 16 25](https://user-images.githubusercontent.com/81257331/129588779-54764694-019d-40af-ab9f-bab8db05a8aa.jpg)
@@ -35,7 +38,7 @@ Adventure game is based on choices made by the player. To play the game the play
 I have manually tested the code by doing the following:
 * Passed the code through PEP8 and confirmed there are no problems.
 * Tested in my local terminal and Code Institute Heroku terminal.
-* Given invalid input when the players inputs an invalid answer.
+* The game gives an input of invalid data if the player inputs invalid data.
 
 
  Bugs
