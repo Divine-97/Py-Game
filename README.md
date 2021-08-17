@@ -51,6 +51,17 @@ I have manually tested the code by doing the following:
 
 
  ## Deployment
+ How to deploy the project
+
+ Hosted on github pages
+
+ Steps for deployment:
+
+  * Fork or clone this repository.
+  * Create a new Heroku app.
+  * Set the buildpacks to Python and NodeJS in that order.
+  * Link the Heroku app to the repository.
+  * Click on Deploy.
  
   
 ## Validator Testing 
@@ -60,6 +71,7 @@ I have manually tested the code by doing the following:
   ## Credits
    * I learned how to create this game by watching this youtube [video](https://www.youtube.com/watch?v=DEcFCn2ubSg).
    * I also used google to look for some ideas of the game.
+   * Code Institute for the deployment terminal.
   
   
   
