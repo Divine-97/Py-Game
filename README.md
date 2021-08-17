@@ -46,7 +46,10 @@ I have manually tested the code by doing the following:
    Solved bugs
    * When testing my code using PEP8 I was getting identation errors (identation is not a multilple of four) which i corrected.
  
- 
+   Remaining bugs
+   * No remaining bugs
+
+
  ## Deployment
  
   
@@ -55,7 +58,8 @@ I have manually tested the code by doing the following:
   No errors were returned from PEP8online.com
   
   ## Credits
-  
+   * I learned how to create this game by watching this youtube [video](https://www.youtube.com/watch?v=DEcFCn2ubSg).
+   * I also used google to look for some ideas of the game.
   
   
   
