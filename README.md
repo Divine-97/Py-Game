@@ -34,6 +34,8 @@ Adventure game is based on choices made by the player. To play the game the play
 
 Before starting my code I looked up a lot of text based adventure games on google and youtube just to grasp some ideas. Then I decided what i wanted to include in my own game. The final adventure game was as per below:
 
+![Image 17-08-2021 at 22 39](https://user-images.githubusercontent.com/81257331/129804207-deec3a85-59cb-44a0-bf10-90eb69b6c591.jpg)
+
 
 The different rooms have been created using functions, to connect them they call each other depending on what the player's answer is. It's pretty self-explanatory. First, we are giving some messages to the player to describe the current situation. Then we take the player's choice as input, then we check if the player typed "1" or "2" or anything else.If the player typed "1", then the game is over. Else if the player typed "2", lead them to the diamond_room().Else, call the game_over function if the player inputs invalid data. The same goes on with all other scenarios till the player either wins or loses the game.
 
