@@ -76,8 +76,8 @@ I have manually tested the code by doing the following:
   No errors were returned from PEP8online.com
   
   ## Credits
-   * I learned how to create this game by watching this youtube [video](https://www.youtube.com/watch?v=DEcFCn2ubSg).
-   * I also used google to look for some ideas of the game.
+   * I had a better understanding of how to create a text based game by watching this youtube [video](https://www.youtube.com/watch?v=DEcFCn2ubSg).
+   * I also used this [page](https://thecodingpie.com/post/make-your-own-text-based-adventure-game-in-python3) to learn how to build this game.
    * Code Institute for the deployment terminal.
    * I would like to thank Tutor support for the assistance and also my Mentor.
   
