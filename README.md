@@ -77,6 +77,7 @@ I have manually tested the code by doing the following:
    * I learned how to create this game by watching this youtube [video](https://www.youtube.com/watch?v=DEcFCn2ubSg).
    * I also used google to look for some ideas of the game.
    * Code Institute for the deployment terminal.
+   * I would like to thank Tutor support for the assistance and also my Mentor.
   
   
   
